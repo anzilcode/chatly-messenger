@@ -39,7 +39,7 @@ const ProfileSetUp = () => {
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/user/updateProfile/${userId}`, {
+      const res = await fetch(`https://chatly-messenger-backend.onrender.com/${userId}`, {
         method: "PUT",
         body: formData,
       });
