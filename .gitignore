@@ -1,0 +1,34 @@
+# ======================
+# Root-level ignores
+# ======================
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules for root (if any)
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# ======================
+# Frontend (React) folder
+# ======================
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.vscode/
+frontend/.idea/
+
+# ======================
+# Backend (Node/Express) folder
+# ======================
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.vscode/
+backend/.idea/
