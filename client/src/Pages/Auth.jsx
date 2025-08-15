@@ -20,13 +20,13 @@ const Auth = () => {
     try {
       let res;
       if (auth === "Register") {
-        res = await axios.post("http://localhost:5000/auth/register", {
+        res = await axios.post("https://chatly-messenger-backend.onrender.com/auth/register", {
           userName: data.Name,
           gmail: data.Gmail,
           password: data.Password
         });
       } else {
-        res = await axios.post("http://localhost:5000/auth/login", {
+        res = await axios.post("https://chatly-messenger-backend.onrender.com/auth/login", {
           gmail: data.Gmail,
           password: data.Password
         });
