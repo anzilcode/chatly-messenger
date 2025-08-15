@@ -23,12 +23,12 @@ const Chat = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/messages/${receiverId}`, {
+        const res = await axios.get(`https://chatly-messenger-backend.onrender.commessages/${receiverId}`, {
           params: { currentUserId },
         });
         setMessages(res.data);
 
-        const usersRes = await axios.get("http://localhost:5000/users");
+        const usersRes = await axios.get("https://chatly-messenger-backend.onrender.com/users");
         const user = usersRes.data.find((u) => u._id === receiverId);
         setReceiverName(user ? user.userName : "Unknown");
       } catch (err) {
