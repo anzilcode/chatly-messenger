@@ -15,7 +15,11 @@ const http = require('http');
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://chatly-messenger-frontend.onrender.com', 
+  credentials: true
+}));
+
 app.use(express.json());
 
 DbConnect();
