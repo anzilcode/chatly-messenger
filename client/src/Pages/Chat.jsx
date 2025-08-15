@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import io from "socket.io-client";
 import axios from "axios";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://chatly-messenger-backend.onrender.com");
 
 const Chat = () => {
   const { id: receiverId } = useParams();
