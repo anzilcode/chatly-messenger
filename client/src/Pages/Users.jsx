@@ -18,7 +18,7 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/users");
+        const res = await axios.get("https://chatly-messenger-backend.onrender.com/users");
         setUsers(res.data);
         setFilteredUsers(res.data);
       } catch (error) {
